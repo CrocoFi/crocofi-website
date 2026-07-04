@@ -1,616 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="CrocoFi is a community-driven Solana meme project built on patience, consistency and long-term conviction." />
-    <meta name="theme-color" content="#04140f" />
-    <title>CROCOFI | Stay Calm. Build the Swamp.</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <style>
-      :root {
-        color-scheme: dark;
-        --bg: #040706;
-        --surface: rgba(7, 16, 15, 0.72);
-        --surface-strong: rgba(12, 24, 22, 0.88);
-        --border: rgba(56, 186, 138, 0.18);
-        --text: #e6f6eb;
-        --muted: #8ba995;
-        --accent: #2ef5a5;
-        --accent-strong: #00ff8a;
-        --shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
-        font-family: 'Inter', sans-serif;
-      }
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CrocoFi</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#07120b;
+color:white;
+}
+
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(180deg,#07120b,#0f2618);
+padding:20px;
+}
+
+h1{
+font-size:72px;
+color:#42ff87;
+margin-bottom:20px;
+}
+
+p{
+font-size:22px;
+max-width:700px;
+line-height:1.6;
+}
+
+button{
+margin-top:40px;
+padding:18px 40px;
+font-size:18px;
+border:none;
+border-radius:40px;
+background:#42ff87;
+color:#07120b;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:100px 10%;
+}
+
+.card{
+background:#12261a;
+padding:30px;
+margin:20px 0;
+border-radius:20px;
+border:1px solid #42ff87;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#061008;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🐊 CrocoFi</h1>
+
+<p>
+The Next Generation Community Powered DeFi Ecosystem.
+Fast. Secure. Built For Everyone.
+</p>
+
+<button>Launch App</button>
+
+</header>
+
+<section>
+
+<h2>Why CrocoFi?</h2>
+
+<div class="card">
+<h3>Lightning Fast</h3>
+<p>Built for speed with modern blockchain infrastructure.</p>
+</div>
 
-      * {
-        box-sizing: border-box;
-      }
+<div class="card">
+<h3>Community First</h3>
+<p>Governance driven by holders.</p>
+</div>
 
-      html {
-        scroll-behavior: smooth;
-      }
+<div class="card">
+<h3>Secure</h3>
+<p>Focused on transparency and long-term sustainability.</p>
+</div>
 
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background: radial-gradient(circle at top left, rgba(16, 255, 178, 0.12), transparent 24%), radial-gradient(circle at bottom right, rgba(0, 225, 150, 0.08), transparent 20%), #040706;
-        color: var(--text);
-        overflow-x: hidden;
-      }
+</section>
 
-      body::before {
-        content: '';
-        position: fixed;
-        inset: 0;
-        background: linear-gradient(120deg, rgba(0, 255, 140, 0.1), rgba(3, 27, 22, 0.4), rgba(0, 255, 140, 0.1));
-        opacity: 0.7;
-        pointer-events: none;
-        animation: drift 20s linear infinite;
-        z-index: -1;
-      }
+<footer>
 
-      @keyframes drift {
-        0% { transform: translate(0, 0) scale(1); }
-        50% { transform: translate(10%, 8%) scale(1.05); }
-        100% { transform: translate(0, 0) scale(1); }
-      }
+<p>©️ 2026 CrocoFi. All Rights Reserved.</p>
 
-      .page-wrap {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 30px 24px 80px;
-      }
+</footer>
 
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        padding: 18px 0;
-      }
-
-      .brand {
-        font-size: 1.05rem;
-        letter-spacing: 0.35rem;
-        color: var(--accent-strong);
-        text-transform: uppercase;
-        font-weight: 800;
-      }
-
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 18px;
-      }
-
-      nav a {
-        color: var(--muted);
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.2s ease;
-      }
-
-      nav a:hover,
-      nav a:focus-visible {
-        color: var(--accent);
-      }
-
-      .hero {
-        position: relative;
-        padding: 120px 0 80px;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-
-      .hero-copy {
-        max-width: 760px;
-      }
-
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        text-transform: uppercase;
-        letter-spacing: 0.25em;
-        font-size: 0.75rem;
-        color: var(--accent);
-      }
-
-      .hero-title {
-        font-size: clamp(3rem, 5vw, 5rem);
-        margin: 18px 0 0;
-        line-height: 0.95;
-        letter-spacing: -0.05em;
-      }
-
-      .hero-title span {
-        color: var(--accent-strong);
-      }
-
-      .hero-subtitle {
-        margin: 20px 0 0;
-        font-size: 1.1rem;
-        color: var(--muted);
-        max-width: 620px;
-        line-height: 1.8;
-      }
-
-      .hero-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        margin-top: 36px;
-      }
-
-      .button,
-      .copy-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 170px;
-        padding: 16px 22px;
-        border-radius: 999px;
-        border: 1px solid rgba(46, 245, 165, 0.25);
-        text-decoration: none;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-        transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.25s ease;
-        cursor: pointer;
-      }
-
-      .button {
-        background: rgba(18, 40, 34, 0.9);
-        color: var(--text);
-        box-shadow: 0 16px 40px rgba(0, 255, 138, 0.12);
-      }
-
-      .button.primary {
-        background: linear-gradient(135deg, rgba(2, 255, 146, 0.92), rgba(0, 187, 99, 0.95));
-        color: #04140f;
-      }
-
-      .button:hover,
-      .copy-button:hover {
-        transform: translateY(-2px);
-      }
-
-      .copy-button {
-        background: rgba(255, 255, 255, 0.05);
-        color: var(--text);
-      }
-
-      .glass-card {
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 32px;
-        backdrop-filter: blur(18px);
-        box-shadow: var(--shadow);
-        padding: 32px;
-      }
-
-      .hero-grid {
-        display: grid;
-        gap: 24px;
-      }
-
-      .hero-market {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
-      }
-
-      .stat-card {
-        background: rgba(18, 36, 32, 0.75);
-        border-radius: 24px;
-        padding: 24px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-      }
-
-      .stat-title {
-        font-size: 0.9rem;
-        color: var(--muted);
-        text-transform: uppercase;
-        letter-spacing: 0.16em;
-        margin-bottom: 12px;
-      }
-
-      .stat-value {
-        font-size: 2rem;
-        font-weight: 800;
-        color: var(--text);
-        margin: 0;
-      }
-
-      section {
-        margin-top: 72px;
-      }
-
-      .section-heading {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        margin-bottom: 28px;
-      }
-
-      .section-heading h2 {
-        font-size: 2rem;
-        margin: 0;
-      }
-
-      .section-heading p {
-        color: var(--muted);
-        margin: 0;
-      }
-
-      .split {
-        display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
-        gap: 32px;
-        align-items: start;
-      }
-
-      .feature-grid {
-        display: grid;
-        gap: 20px;
-      }
-
-      .feature-card {
-        padding: 24px;
-        border-radius: 28px;
-        background: rgba(7, 16, 15, 0.72);
-        border: 1px solid rgba(46, 245, 165, 0.12);
-        transition: transform 0.3s ease, border-color 0.3s ease;
-      }
-
-      .feature-card:hover {
-        transform: translateY(-4px);
-        border-color: rgba(46, 245, 165, 0.28);
-      }
-
-      .feature-card h3 {
-        margin: 0 0 12px;
-        font-size: 1.2rem;
-      }
-
-      .feature-card p {
-        margin: 0;
-        color: var(--muted);
-        line-height: 1.8;
-      }
-
-      .roadmap-list,
-      .faq-list {
-        display: grid;
-        gap: 18px;
-      }
-
-      .roadmap-item,
-      .faq-item {
-        background: rgba(7, 16, 15, 0.82);
-        border: 1px solid rgba(46, 245, 165, 0.12);
-        border-radius: 26px;
-        padding: 24px;
-      }
-
-      .roadmap-item h4,
-      .faq-item h4 {
-        margin: 0 0 10px;
-        font-size: 1.1rem;
-      }
-
-      .roadmap-item p,
-      .faq-item p {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .community-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 20px;
-      }
-
-      .community-card {
-        border-radius: 28px;
-        padding: 28px;
-        background: linear-gradient(180deg, rgba(9, 21, 18, 0.95), rgba(2, 13, 11, 0.9));
-        border: 1px solid rgba(46, 245, 165, 0.16);
-      }
-
-      .community-card strong {
-        display: block;
-        margin-bottom: 14px;
-        font-size: 1.15rem;
-      }
-
-      .community-card p {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .footer {
-        margin-top: 80px;
-        padding-top: 44px;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
-      }
-
-      .footer p,
-      .footer small {
-        color: var(--muted);
-        margin: 0;
-      }
-
-      .social-links {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-      }
-
-      .social-links a {
-        color: var(--muted);
-        text-decoration: none;
-        transition: color 0.2s ease;
-      }
-
-      .social-links a:hover {
-        color: var(--accent);
-      }
-
-      @media (max-width: 900px) {
-        .hero {
-          padding-top: 80px;
-        }
-
-        .hero-market {
-          grid-template-columns: 1fr;
-        }
-
-        .split {
-          grid-template-columns: 1fr;
-        }
-
-        .community-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      @media (max-width: 620px) {
-        .page-wrap {
-          padding: 20px 16px 60px;
-        }
-
-        header {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        nav {
-          width: 100%;
-          justify-content: flex-start;
-        }
-
-        .hero-title {
-          font-size: clamp(2.6rem, 12vw, 4.2rem);
-        }
-
-        .button,
-        .copy-button {
-          width: 100%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page-wrap">
-      <header>
-        <a href="#hero" class="brand">CROCOFI</a>
-        <nav aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#why">Why CrocoFi</a>
-          <a href="#roadmap">Roadmap</a>
-          <a href="#community">Community</a>
-          <a href="#faq">FAQ</a>
-        </nav>
-      </header>
-
-      <section id="hero" class="hero">
-        <div class="hero-copy">
-          <div class="eyebrow">Stay Calm. Build the Swamp.</div>
-          <h1 class="hero-title">CROCOFI</h1>
-          <p class="hero-subtitle">A community-driven Solana meme project built on patience, consistency and long-term conviction.</p>
-          <div class="hero-buttons">
-            <a class="button primary" href="https://join.pump.fun/HSag/ksl90quo" target="_blank" rel="noopener noreferrer">Buy CROFI</a>
-            <a class="button" href="https://t.me/CrocoFi" target="_blank" rel="noopener noreferrer">Join Telegram</a>
-            <a class="button" href="https://x.com/crocofisol" target="_blank" rel="noopener noreferrer">Follow on X</a>
-          </div>
-          <div class="hero-buttons" style="margin-top:18px; gap:12px;">
-            <div class="glass-card" style="display:flex; flex-direction:column; gap:12px; max-width:680px;">
-              <p style="margin:0; font-size:0.95rem; color: var(--muted);">Contract Address</p>
-              <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px; justify-content:space-between;">
-                <span style="font-family: monospace; color: var(--text); word-break: break-all;">E7SCSHhrZ2CaenM7Ewkb4MSLZbrX1dDFNcQeZn5Epump</span>
-                <button class="copy-button" type="button" id="copyContract">Copy Contract</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-grid">
-          <div class="glass-card" style="display:grid; gap:18px;">
-            <div class="stat-card">
-              <p class="stat-title">Network</p>
-              <p class="stat-value">Solana</p>
-            </div>
-            <div class="stat-card">
-              <p class="stat-title">Launch Style</p>
-              <p class="stat-value">Community-led</p>
-            </div>
-          </div>
-          <div class="glass-card" style="display:grid; gap:18px;">
-            <div class="stat-card">
-              <p class="stat-title">Theme</p>
-              <p class="stat-value">Luxury Meme Token</p>
-            </div>
-            <div class="stat-card">
-              <p class="stat-title">Mission</p>
-              <p class="stat-value">Patience & Growth</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="section-heading">
-          <div>
-            <h2>About</h2>
-            <p>CROCOFI blends premium design, community resilience and Web3 culture into a distinctive Solana meme experience.</p>
-          </div>
-        </div>
-        <div class="split">
-          <div class="glass-card">
-            <h3>Built for the long run</h3>
-            <p>Our community values resilience over hype. CrocoFi fosters patient accumulation, strong conviction and a shared vision for a sustainable ecosystem.</p>
-          </div>
-          <div class="feature-grid">
-            <div class="feature-card">
-              <h3>Exclusive identity</h3>
-              <p>Premium visuals and emerging utility bring clarity and strength to a meme narrative rooted in consistency.</p>
-            </div>
-            <div class="feature-card">
-              <h3>Secure by design</h3>
-              <p>We embrace transparency, careful tokenomics and community oversight to build trust and long-term value.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="why">
-        <div class="section-heading">
-          <div>
-            <h2>Why CrocoFi</h2>
-            <p>Reasons to stay calm and build with the swamp.</p>
-          </div>
-        </div>
-        <div class="feature-grid">
-          <div class="feature-card">
-            <h3>Community First</h3>
-            <p>Every decision and milestone is guided by the people who believe in the project.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Long-Term Conviction</h3>
-            <p>We reward endurance, not impulsive momentum, with a strategy built for consistent growth.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Memetic Power</h3>
-            <p>Stylish branding and cultural resonance make CrocoFi more than a token — it’s a movement.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="roadmap">
-        <div class="section-heading">
-          <div>
-            <h2>Roadmap</h2>
-            <p>Planned milestones for progress, momentum and community development.</p>
-          </div>
-        </div>
-        <div class="roadmap-list">
-          <div class="roadmap-item">
-            <h4>Phase 1: Foundation</h4>
-            <p>Community building, liquidity launch, Telegram & X growth and premium branding rollout.</p>
-          </div>
-          <div class="roadmap-item">
-            <h4>Phase 2: Momentum</h4>
-            <p>Operational updates, token distribution transparency and strategic partnerships for long-term strength.</p>
-          </div>
-          <div class="roadmap-item">
-            <h4>Phase 3: Swamp Expansion</h4>
-            <p>Enhanced community utilities, exclusive campaigns and deeper engagement across Solana networks.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="community">
-        <div class="section-heading">
-          <div>
-            <h2>Community</h2>
-            <p>Driven by believers, strengthened by shared values and relentless support.</p>
-          </div>
-        </div>
-        <div class="community-grid">
-          <div class="community-card">
-            <strong>Telegram</strong>
-            <p>Join the conversation with fans, updates and strategic announcements.</p>
-          </div>
-          <div class="community-card">
-            <strong>X Updates</strong>
-            <p>Follow the latest project velocity, social drops and milestone celebrations.</p>
-          </div>
-          <div class="community-card">
-            <strong>Pump.fun</strong>
-            <p>Secure your CROFI position with a trusted launchpad for new token discovery.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq">
-        <div class="section-heading">
-          <div>
-            <h2>FAQ</h2>
-            <p>Answers to common questions about CrocoFi.</p>
-          </div>
-        </div>
-        <div class="faq-list">
-          <div class="faq-item">
-            <h4>What is CrocoFi?</h4>
-            <p>A premium Solana meme token with a community-driven roadmap, emphasizing patience and long-term conviction.</p>
-          </div>
-          <div class="faq-item">
-            <h4>How can I buy CROFI?</h4>
-            <p>Use the Pump.fun launch link or join our Telegram for step-by-step participation details.</p>
-          </div>
-          <div class="faq-item">
-            <h4>Why use the contract address?</h4>
-            <p>The contract address ensures you interact with the official CROFI token and avoid imitation projects.</p>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <p>&copy; 2026 CrocoFi. Built for the patient crypto community.</p>
-        <div class="social-links">
-          <a href="https://t.me/CrocoFi" target="_blank" rel="noopener noreferrer">Telegram</a>
-          <a href="https://x.com/crocofisol" target="_blank" rel="noopener noreferrer">X</a>
-          <a href="https://join.pump.fun/HSag/ksl90quo" target="_blank" rel="noopener noreferrer">Pump.fun</a>
-        </div>
-      </footer>
-    </div>
-
-    <script>
-      const copyButton = document.getElementById('copyContract');
-      const contractAddress = 'E7SCSHhrZ2CaenM7Ewkb4MSLZbrX1dDFNcQeZn5Epump';
-
-      copyButton.addEventListener('click', async () => {
-        try {
-          await navigator.clipboard.writeText(contractAddress);
-          copyButton.textContent = 'Copied!';
-          setTimeout(() => {
-            copyButton.textContent = 'Copy Contract';
-          }, 2000);
-        } catch (error) {
-          copyButton.textContent = 'Copy Failed';
-          setTimeout(() => {
-            copyButton.textContent = 'Copy Contract';
-          }, 2000);
-        }
-      });
-    </script>
-  </body>
+</body>
 </html>
