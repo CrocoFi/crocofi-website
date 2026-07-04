@@ -331,3 +331,163 @@ if(menuBtn && navbar){
     });
 
 }
+/*==================================
+        ANIMATED COUNTERS
+===================================*/
+
+const counters = document.querySelectorAll(".counter");
+
+const runCounter = () => {
+
+    counters.forEach(counter => {
+
+        const target = +counter.dataset.target;
+
+        let count = 0;
+
+        const speed = target / 120;
+
+        const update = () => {
+
+            count += speed;
+
+            if(count < target){
+
+                counter.innerText = Math.floor(count).toLocaleString();
+
+                requestAnimationFrame(update);
+
+            }else{
+
+                counter.innerText = target.toLocaleString();
+
+            }
+
+        };
+
+        update();
+
+    });
+
+};
+
+const statSection = document.querySelector(".stats");
+
+if(statSection){
+
+    const observer = new IntersectionObserver(entries => {
+
+        if(entries[0].isIntersecting){
+
+            runCounter();
+
+            observer.disconnect();
+
+        }
+
+    });
+
+    observer.observe(statSection);
+
+}
+/*==================================
+        CINEMATIC INTRO
+===================================*/
+
+window.addEventListener("load", () => {
+
+    const intro = document.getElementById("intro");
+
+    if (!intro) return;
+
+    setTimeout(() => {
+
+        intro.style.opacity = "0";
+
+        setTimeout(() => {
+
+            intro.remove();
+
+        }, 1000);
+
+    }, 4000);
+
+});
+/*==================================
+        COUNTER ANIMATION
+===================================*/
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        const counter = entry.target;
+
+        const target = +counter.dataset.target;
+
+        let count = 0;
+
+        const increment = target / 120;
+
+        const update = () => {
+
+            count += increment;
+
+            if (count < target) {
+
+                counter.innerText = Math.floor(count).toLocaleString();
+
+                requestAnimationFrame(update);
+
+            } else {
+
+                counter.innerText = target.toLocaleString();
+
+            }
+
+        };
+
+        update();
+
+        counterObserver.unobserve(counter);
+
+    });
+
+});
+
+counters.forEach(counter => {
+
+    counterObserver.observe(counter);
+
+});
+/*==================================
+        MOBILE MENU
+===================================*/
+
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+
+if(menuBtn && navbar){
+
+    menuBtn.addEventListener("click",()=>{
+
+        navbar.classList.toggle("active");
+
+    });
+
+}
+const mobileLinks = document.querySelectorAll("#navbar a");
+
+mobileLinks.forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navbar.classList.remove("active");
+
+    });
+
+});
