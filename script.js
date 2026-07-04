@@ -121,12 +121,6 @@ if (spotlight) {
     });
 }
 
-document.addEventListener("mousemove", (e) => {
-
-    spotlight.style.left = e.clientX + "px";
-    spotlight.style.top = e.clientY + "px";
-
-});
 /*==================================
         FLOATING PARTICLES
 ===================================*/
@@ -328,20 +322,14 @@ const navbar = document.getElementById("navbar");
 if(menuBtn && navbar){
 
     menuBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});
 
-        navbar.classList.toggle("show");
-
+navbar.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navbar.classList.remove("active");
     });
-
-    navbar.querySelectorAll("a").forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            navbar.classList.remove("show");
-
-        });
-
-    });
+});
 
 }
 /*==================================
