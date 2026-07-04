@@ -2,452 +2,110 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CrocoFi | Community Powered DeFi</title>
+<title>CrocoFi | Rule The Swamp. Rule The Future.</title>
 
-<link rel="stylesheet" href="assets/style.css">
+<meta name="description"
+content="CrocoFi is more than a token. It's a community, a brand, and a kingdom built for those who believe great things are created with patience, vision, and unity. Built on Solana, CrocoFi empowers its community to shape the future together.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="keywords"
+content="CrocoFi,CROFI,Solana,Crypto,Community,Blockchain">
+
+<meta name="theme-color" content="#19ff7a">
+
+<link rel="icon" href="assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!--==============================
+LOADER
+===============================-->
 
-<nav class="navbar">
+<div id="loader">
+
+<div class="loader-content">
+
+<img src="assets/logo.png"
+alt="CrocoFi Logo">
+
+<h2>CROCOFI</h2>
+
+<p>Entering the Kingdom...</p>
+
+</div>
+
+</div>
+
+<!--==============================
+BACKGROUND
+===============================-->
+
+<div class="background">
+
+<div class="gradient gradient1"></div>
+
+<div class="gradient gradient2"></div>
+
+<div class="gradient gradient3"></div>
+
+<canvas id="particles"></canvas>
+
+</div>
+
+<!--==============================
+CURSOR
+===============================-->
+
+<div class="cursor-glow"></div>
+<div class="spotlight"></div>
+
+<!--==============================
+SCROLL PROGRESS
+===============================-->
+
+<div class="progress-bar"
+id="scrollProgress"></div>
+
+<!--==============================
+HEADER
+===============================-->
+
+<header class="header">
 
 <div class="container">
 
-<div class="logo">
-<img src="assets/logo.png" alt="CrocoFi">
-<span>CrocoFi</span>
-</div>
+<a href="#home"
+class="logo">
 
-<ul class="nav-links">
+<img src="assets/logo.png"
+alt="CrocoFi Logo">
 
-<li><a href="#about">About</a></li>
-<li><a href="#features">Features</a></li>
-<li><a href="#tokenomics">Tokenomics</a></li>
-<li><a href="#roadmap">Roadmap</a></li>
-<li><a href="#community">Community</a></li>
-
-</ul>
-
-<a href="https://join.pump.fun/HSag/ksl90quo" target="_blank" class="launch-btn">
-Launch App
-</a>
-
-</div>
-
-</nav>
-
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
-<div class="hero-left">
-
-<h1>
-The Future of<br>
-Community Powered DeFi
-</h1>
-
-<p>
-
-CrocoFi is building the next-generation decentralized ecosystem on Solana.
-
-Fast. Secure. Transparent.
-
-Powered entirely by the community.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="https://join.pump.fun/HSag/ksl90quo"
-target="_blank"
-class="primary-btn">
-
-Buy Token
-
-</a>
-
-<a href="#tokenomics"
-class="secondary-btn">
-
-View Tokenomics
-
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-right">
-
-<img src="assets/logo.png" alt="CrocoFi Logo">
-
-</div>
-
-</section>
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="about">
-
-<div class="container">
-
-<h2>About CrocoFi</h2>
-
-<p class="section-subtitle">
-
-CrocoFi is a community-first DeFi ecosystem built on Solana.
-
-Our goal is to create a transparent, secure and rewarding ecosystem where every holder becomes part of the project's future.
-
-</p>
-
-<div class="about-grid">
-
-<div class="about-card">
-
-<h3>🚀 Fast</h3>
-
-<p>
-
-Built on Solana for lightning-fast transactions and extremely low fees.
-
-</p>
-
-</div>
-
-<div class="about-card">
-
-<h3>🔒 Secure</h3>
-
-<p>
-
-Community focused with transparent smart contracts and fair launches.
-
-</p>
-
-</div>
-
-<div class="about-card">
-
-<h3>🌎 Community</h3>
-
-<p>
-
-CrocoFi grows with its holders. Every milestone is powered by the community.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= FEATURES ================= -->
-
-<section id="features" class="features">
-
-<div class="container">
-
-<h2>Why Choose CrocoFi?</h2>
-
-<p class="section-subtitle">
-
-Everything is designed for speed, transparency and long-term growth.
-
-</p>
-
-<div class="feature-grid">
-
-<div class="feature-box">
-
-<h3>⚡ Lightning Fast</h3>
-
-<p>
-
-Transactions finalize in seconds thanks to Solana.
-
-</p>
-
-</div>
-
-<div class="feature-box">
-
-<h3>💰 Low Fees</h3>
-
-<p>
-
-Ultra-low transaction costs make trading affordable.
-
-</p>
-
-</div>
-
-<div class="feature-box">
-
-<h3>🛡 Safe</h3>
-
-<p>
-
-Community-first development with transparency.
-
-</p>
-
-</div>
-
-<div class="feature-box">
-
-<h3>🌍 Decentralized</h3>
-
-<p>
-
-Built for everyone. Owned by the community.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= TOKENOMICS ================= -->
-
-<section id="tokenomics" class="tokenomics">
-
-<div class="container">
-
-<h2>Tokenomics</h2>
-
-<p class="section-subtitle">
-
-Built for long-term sustainability, transparency and community ownership.
-
-</p>
-
-<div class="token-grid">
-
-<div class="token-card">
-
-<h3>0%</h3>
-
-<span>Buy Tax</span>
-
-</div>
-
-<div class="token-card">
-
-<h3>0%</h3>
-
-<span>Sell Tax</span>
-
-</div>
-
-<div class="token-card">
-
-<h3>100%</h3>
-
-<span>Community Driven</span>
-
-</div>
-
-<div class="token-card">
-
-<h3>⚡</h3>
-
-<span>Built on Solana</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= ROADMAP ================= -->
-
-<section id="roadmap" class="roadmap">
-
-<div class="container">
-
-<h2>Roadmap</h2>
-
-<p class="section-subtitle">
-
-The journey of CrocoFi has just begun.
-
-</p>
-
-<div class="roadmap-grid">
-
-<div class="roadmap-card">
-
-<h3>Phase 1</h3>
-
-<p>
-
-✅ Website Launch
-
-<br><br>
-
-✅ Social Media Setup
-
-<br><br>
-
-✅ Community Building
-
-</p>
-
-</div>
-
-<div class="roadmap-card">
-
-<h3>Phase 2</h3>
-
-<p>
-
-🚀 Pump.fun Launch
-
-<br><br>
-
-🚀 Holder Growth
-
-<br><br>
-
-🚀 Marketing Push
-
-</p>
-
-</div>
-
-<div class="roadmap-card">
-
-<h3>Phase 3</h3>
-
-<p>
-
-📈 CoinGecko Listing
-
-<br><br>
-
-📈 CoinMarketCap
-
-<br><br>
-
-📈 Partnerships
-
-</p>
-
-</div>
-
-<div class="roadmap-card">
-
-<h3>Phase 4</h3>
-
-<p>
-
-🌎 Ecosystem Expansion
-
-<br><br>
-
-🌎 Utilities
-
-<br><br>
-
-🌎 Global Community
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= COMMUNITY ================= -->
-
-<section id="community" class="community">
-
-<div class="container">
-
-<h2>Join The Swamp</h2>
-
-<p class="section-subtitle">
-
-Become a part of the CrocoFi movement.
-
-</p>
-
-<div class="community-buttons">
-
-<a href="https://t.me/CrocoFi"
-target="_blank"
-class="primary-btn">
-
-Telegram
+<span>CROCOFI</span>
 
 </a>
 
-<a href="https://x.com/crocofisol"
-target="_blank"
-class="secondary-btn">
+<nav class="navbar" id="navbar">
 
-Follow on X
-
-</a>
-
-<a href="https://join.pump.fun/HSag/ksl90quo"
-target="_blank"
-class="primary-btn">
-
-Buy on Pump.fun
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-<div class="container">
-
-<div class="footer-logo">
-
-<img src="assets/logo.png" alt="CrocoFi Logo">
-
-<h2>CrocoFi</h2>
-
-</div>
-
-<p class="footer-text">
-
-Stay Calm. Build the Swamp.
-
-</p>
-
-<div class="footer-links">
+<a href="#home">Home</a>
 
 <a href="#about">About</a>
-
-<a href="#features">Features</a>
 
 <a href="#tokenomics">Tokenomics</a>
 
@@ -455,19 +113,1277 @@ Stay Calm. Build the Swamp.
 
 <a href="#community">Community</a>
 
+<a href="#faq">FAQ</a>
+
+</nav>
+
+<div class="header-right">
+
+<a href="https://join.pump.fun/HSag/ksl90quo"
+target="_blank"
+class="launch-btn">
+
+Enter the Kingdom
+
+</a>
+
+<button class="menu-btn" id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
 </div>
 
-<p class="copyright">
+</div>
 
-©️ 2026 CrocoFi. All Rights Reserved.
+</header>
+
+<main>
+    <!--==================================
+            HERO SECTION
+===================================-->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<!-- LEFT -->
+
+<div class="hero-left">
+
+<div class="hero-badge">
+
+<i class="fa-solid fa-crown"></i>
+
+<span>THE KINGDOM OF SOLANA</span>
+
+</div>
+
+<h1>
+
+Rule The Swamp.
+
+<span>Rule The Future.</span>
+
+</h1>
+
+<p>
+
+CrocoFi is more than a token.
+It's a community, a brand, and a kingdom built for those who believe great things are created with patience, vision, and unity.
+
+Built on Solana, CrocoFi empowers its community to shape the future together.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://join.pump.fun/HSag/ksl90quo"
+
+target="_blank"
+
+class="btn btn-primary">
+
+Enter the Kingdom
+
+</a>
+
+<a href="#about"
+
+class="btn btn-secondary">
+
+Explore the Vision
+
+</a>
+
+</div>
+
+<div class="hero-trust">
+
+<span>
+
+<i class="fa-solid fa-circle-check"></i>
+
+Built on Solana
+
+</span>
+
+<span>
+
+<i class="fa-solid fa-circle-check"></i>
+
+Community Powered
+
+</span>
+
+<span>
+
+<i class="fa-solid fa-circle-check"></i>
+
+Long-Term Vision
+
+</span>
+
+<span>
+
+<i class="fa-solid fa-circle-check"></i>
+
+Transparent Communication
+
+</span>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="hero-right">
+
+<div class="hero-image">
+
+<div class="hero-ring ring1"></div>
+
+<div class="hero-ring ring2"></div>
+
+<div class="hero-ring ring3"></div>
+
+<img
+
+src="assets/mascot.png"
+
+alt="CrocoFi Mascot"
+
+class="hero-mascot"
+
+>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="scroll-down">
+
+<span></span>
+
+</div>
+
+</section>
+<!--==================================
+        THE KING'S COMMAND
+===================================-->
+
+<section class="kings-command reveal">
+
+<div class="container">
+
+<div class="command-card">
+
+<div class="command-icon">
+
+<i class="fa-solid fa-crown"></i>
+
+</div>
+
+<span class="command-label">
+
+THE KING'S COMMAND
+
+</span>
+
+<h2>
+
+"The Swamp Never Sleeps."
+
+</h2>
+
+<p class="command-text">
+
+Build with patience.
+
+Rule with purpose.
+
+</p>
+
+<div class="command-divider"></div>
+
+<p class="command-footer">
+
+Built with patience.
+
+Powered by community.
+
+Driven by vision.
 
 </p>
 
 </div>
 
+</div>
+
+</section>
+<!--==================================
+            OUR STORY
+===================================-->
+
+<section class="about reveal" id="about">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>OUR STORY</span>
+
+<h2>
+
+Every kingdom begins with a vision.
+
+</h2>
+
+<p>
+
+CrocoFi was created to build more than a token—it was created to build a community, a recognizable brand, and a kingdom where every member helps shape its future.
+
+Inspired by the resilience, patience, and strength of the crocodile, CrocoFi stands for strategic thinking, unwavering determination, and long-term vision.
+
+Built on the Solana ecosystem, it embraces speed, innovation, and transparency while focusing on sustainable growth rather than short-lived hype.
+
+</p>
+
+</div>
+
+<div class="about-grid">
+
+<div class="glass-card">
+
+<div class="icon">
+
+<i class="fa-solid fa-crown"></i>
+
+</div>
+
+<h3>
+
+The Kingdom
+
+</h3>
+
+<p>
+
+The Swamp is our Kingdom.
+
+The Community is our Strength.
+
+The Future is ours to build.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<div class="icon">
+
+<i class="fa-solid fa-people-group"></i>
+
+</div>
+
+<h3>
+
+Community First
+
+</h3>
+
+<p>
+
+CrocoFi believes that lasting projects are built by people who share a common vision. Every member helps shape the future of the Kingdom.
+
+</p>
+
+</div>
+
+<div class="glass-card">
+
+<div class="icon">
+
+<i class="fa-solid fa-lightbulb"></i>
+
+</div>
+
+<h3>
+
+Built With Vision
+
+</h3>
+
+<p>
+
+Built with patience.
+
+Powered by community.
+
+Driven by vision.
+
+These principles define everything we build.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--==================================
+            WHY CROCOFI
+===================================-->
+
+<section class="features reveal">
+
+<div class="container">
+
+<div class="section-heading">
+
+<span>WHY CROCOFI</span>
+
+<h2>
+
+More Than A Token.
+
+A Kingdom Built To Last.
+
+</h2>
+
+<p>
+
+CrocoFi isn't built for hype.
+
+It's built for those who believe great kingdoms are created with patience, community, and vision.
+
+</p>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Community Powered</h3>
+
+<p>
+
+Every great kingdom is built by its people. CrocoFi grows through the passion and commitment of its community.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>Built on Solana</h3>
+
+<p>
+
+Powered by the Solana ecosystem, CrocoFi embraces speed, efficiency, and innovation.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-gem"></i>
+
+<h3>Premium Identity</h3>
+
+<p>
+
+CrocoFi is designed to be more than a cryptocurrency. It is a recognizable brand built with consistency, quality, and purpose.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-seedling"></i>
+
+<h3>Long-Term Vision</h3>
+
+<p>
+
+Our focus is on building a lasting community and a meaningful ecosystem rather than chasing short-term trends.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--==================================
+   CHAPTER V   • OFFICIAL GATEWAYS
+===================================-->
+
+<section class="official-links reveal" id="official">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>CHAPTER V</span>
+
+            <h2>Official Gateways</h2>
+
+            <p>
+
+                Always use the official CrocoFi resources below.
+                Verify the contract address before interacting with the project.
+
+            </p>
+
+        </div>
+
+        <div class="official-grid">
+
+            <!-- Pump.fun -->
+
+            <a href="https://join.pump.fun/HSag/ksl90quo"
+               target="_blank"
+               class="official-card">
+
+                <i class="fa-solid fa-rocket"></i>
+
+                <h3>Buy on Pump.fun</h3>
+
+                <p>Enter the Kingdom</p>
+
+            </a>
+
+            <!-- Telegram -->
+
+            <a href="https://t.me/CrocoFi"
+               target="_blank"
+               class="official-card">
+
+                <i class="fa-brands fa-telegram"></i>
+
+                <h3>Telegram</h3>
+
+                <p>Join the Community</p>
+
+            </a>
+
+            <!-- X -->
+
+            <a href="https://x.com/crocofisol?s=21&t=EG3Qz4GTSKqqtQHz8vpHpg"
+               target="_blank"
+               class="official-card">
+
+                <i class="fa-brands fa-x-twitter"></i>
+
+                <h3>X</h3>
+
+                <p>Latest Updates</p>
+
+            </a>
+
+        </div>
+
+        <!-- Contract Address -->
+
+        <div class="contract-box">
+
+            <span class="contract-label">
+
+                Official Contract Address
+
+            </span>
+
+            <div class="contract-wrapper">
+
+                <input
+                    id="contractAddress"
+                    type="text"
+                    readonly
+                    value="E7SCSHhrZ2CaenM7Ewkb4MSLZbrX1dDFNcQeZn5Epump">
+
+                <button
+                    id="copyContract"
+                    class="copy-btn">
+
+                    <i class="fa-regular fa-copy"></i>
+
+                    Copy
+
+                </button>
+
+            </div>
+
+            <small>
+
+                Verify this contract address before trading.
+
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+        CHAPTER VI • TOKENOMICS
+===================================-->
+
+<section class="tokenomics reveal" id="tokenomics">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>CHAPTER VI</span>
+
+            <h2>Tokenomics</h2>
+
+            <p>
+
+                Transparency is the foundation of every lasting kingdom.
+                Below is the verified information about CrocoFi.
+
+            </p>
+
+        </div>
+
+        <div class="token-grid">
+
+            <!-- Blockchain -->
+
+            <article class="card token-card">
+
+                <div class="token-icon">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <h3>Blockchain</h3>
+
+                <h2>Solana</h2>
+
+                <p>Fast. Efficient. Scalable.</p>
+
+            </article>
+
+            <!-- Symbol -->
+
+            <article class="card token-card">
+
+                <div class="token-icon">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+
+                <h3>Token Symbol</h3>
+
+                <h2>CROFI</h2>
+
+                <p>The official CrocoFi token.</p>
+
+            </article>
+
+            <!-- Community -->
+
+            <article class="card token-card">
+
+                <div class="token-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+
+                <h3>Kingdom</h3>
+
+                <h2>Open</h2>
+
+                <p>Everyone is welcome to enter the Kingdom.</p>
+
+            </article>
+
+            <!-- Vision -->
+
+            <article class="card token-card">
+
+                <div class="token-icon">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+
+                <h3>Kingdom Philosophy</h3>
+
+                <h2>Long-Term</h2>
+
+                <p>Built with patience. Powered by Community.</p>
+
+            </article>
+
+        </div>
+
+        <div class="token-note">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <p>
+
+                CrocoFi believes in transparency. Information presented on this website reflects official project details. As the ecosystem evolves, additional verified information will be published through CrocoFi's official channels.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+        CHAPTER VII • ROADMAP
+===================================-->
+
+<section class="roadmap reveal" id="roadmap">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>CHAPTER VII</span>
+
+            <h2>The Rise of the Kingdom</h2>
+
+            <p>
+
+                Every lasting kingdom is built step by step.
+                CrocoFi's roadmap represents our commitment to continuous growth,
+                transparency, and community.
+
+            </p>
+
+        </div>
+
+        <div class="roadmap-wrapper">
+
+            <!-- Phase 1 -->
+
+            <article class="roadmap-item">
+
+                <div class="road-number">
+                    I
+                </div>
+
+                <div class="road-content">
+
+                    <span class="road-status completed">
+
+                        Foundation
+
+                    </span>
+
+                    <h3>The Awakening</h3>
+
+                    <p>
+
+                        Every kingdom begins with a vision.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Launch CrocoFi</li>
+
+                        <li>Build the official website</li>
+
+                        <li>Establish the brand identity</li>
+
+                        <li>Introduce the King of the Swamp</li>
+
+                        <li>Build the founding community</li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+            <!-- Phase 2 -->
+
+            <article class="roadmap-item">
+
+                <div class="road-number">
+                    II
+                </div>
+
+                <div class="road-content">
+
+                    <span class="road-status progress">
+
+                        Growing
+
+                    </span>
+
+                    <h3>Building the Kingdom</h3>
+
+                    <p>
+
+                        A kingdom is built one citizen at a time.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Expand the community</li>
+
+                        <li>Increase awareness</li>
+
+                        <li>Strategic partnerships</li>
+
+                        <li>Community campaigns</li>
+
+                        <li>Strengthen the CrocoFi brand</li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+            <!-- Phase 3 -->
+
+            <article class="roadmap-item">
+
+                <div class="road-number">
+                    III
+                </div>
+
+                <div class="road-content">
+
+                    <span class="road-status upcoming">
+
+                        Future
+
+                    </span>
+
+                    <h3>Rise of the Kingdom</h3>
+
+                    <p>
+
+                        Strong kingdoms are built with patience.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Grow the ecosystem</li>
+
+                        <li>Community-driven initiatives</li>
+
+                        <li>Expand partnerships</li>
+
+                        <li>Increase global visibility</li>
+
+                        <li>Continue long-term development</li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+            <!-- Phase 4 -->
+
+            <article class="roadmap-item">
+
+                <div class="road-number">
+                    IV
+                </div>
+
+                <div class="road-content">
+
+                    <span class="road-status vision">
+
+                        Vision
+
+                    </span>
+
+                    <h3>Rule the Future</h3>
+
+                    <p>
+
+                        The journey never ends for those who keep building.
+
+                    </p>
+
+                    <ul>
+
+                        <li>Expand the CrocoFi ecosystem</li>
+
+                        <li>Strengthen the Kingdom</li>
+
+                        <li>Explore new opportunities</li>
+
+                        <li>Empower the community</li>
+
+                        <li>Continue building for generations</li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+        CHAPTER VIII • THE KINGDOM
+===================================-->
+
+<section class="community reveal" id="community">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>CHAPTER VIII</span>
+
+            <h2>
+
+                CHOMP THE DIP.
+                <br>
+                RULE THE SWAMP.
+
+            </h2>
+
+            <p>
+
+                Great kingdoms are not built by one ruler alone.
+                They are built by people who believe in the same vision.
+
+                Become part of the CrocoFi Kingdom and help shape its future.
+
+            </p>
+
+        </div>
+
+        <div class="community-grid">
+
+            <!-- Telegram -->
+
+            <a href="https://t.me/CrocoFi"
+
+               target="_blank"
+
+               class="card community-card">
+
+                <div class="community-icon">
+
+                    <i class="fa-brands fa-telegram"></i>
+
+                </div>
+
+                <h3>
+
+                    Telegram
+
+                </h3>
+
+                <p>
+
+                    Join the Kingdom.
+                    Meet the community.
+                    Stay connected.
+
+                </p>
+
+            </a>
+
+            <!-- X -->
+
+            <a href="https://x.com/crocofisol?s=21&t=EG3Qz4GTSKqqtQHz8vpHpg"
+
+               target="_blank"
+
+               class="card community-card">
+
+                <div class="community-icon">
+
+                    <i class="fa-brands fa-x-twitter"></i>
+
+                </div>
+
+                <h3>
+
+                    X
+
+                </h3>
+
+                <p>
+
+                    Follow our latest announcements,
+                    updates and Kingdom news.
+
+                </p>
+
+            </a>
+
+            <!-- Pump.fun -->
+
+            <a href="https://join.pump.fun/HSag/ksl90quo"
+
+               target="_blank"
+
+               class="card community-card">
+
+                <div class="community-icon">
+
+                    <i class="fa-solid fa-rocket"></i>
+
+                </div>
+
+                <h3>
+
+                    Enter the Kingdom
+
+                </h3>
+
+                <p>
+
+                    Join CrocoFi on Pump.fun
+                    and become part of the journey.
+
+                </p>
+
+            </a>
+
+        </div>
+
+        <div class="community-quote">
+
+            <i class="fa-solid fa-crown"></i>
+
+            <p>
+
+                "The strongest kingdoms are built by those
+                who never stop believing."
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+    CHAPTER IX • FREQUENTLY ASKED QUESTIONS
+===================================-->
+
+<section class="faq reveal" id="faq">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>CHAPTER IX</span>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <p>
+
+                Everything you need to know before entering the Kingdom.
+
+            </p>
+
+        </div>
+
+        <div class="faq-wrapper">
+
+            <!-- FAQ 1 -->
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    <h3>What is CrocoFi?</h3>
+
+                    <span>+</span>
+
+                </div>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        CrocoFi is more than a token.
+                        It is a community, a recognizable brand,
+                        and a kingdom built on the Solana ecosystem
+                        for people who believe in patience,
+                        vision and long-term growth.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 2 -->
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    <h3>Which blockchain is CrocoFi built on?</h3>
+
+                    <span>+</span>
+
+                </div>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        CrocoFi is built on the Solana blockchain,
+                        known for its speed, scalability and efficiency.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 3 -->
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    <h3>Where can I buy CROFI?</h3>
+
+                    <span>+</span>
+
+                </div>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        You can purchase CROFI through our official
+                        Pump.fun page linked throughout this website.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 4 -->
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    <h3>Where can I join the community?</h3>
+
+                    <span>+</span>
+
+                </div>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Join our official Telegram community and
+                        follow CrocoFi on X to stay updated with
+                        announcements and future developments.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 5 -->
+
+            <div class="faq-item">
+
+                <div class="faq-question">
+
+                    <h3>What makes CrocoFi different?</h3>
+
+                    <span>+</span>
+
+                </div>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        CrocoFi aims to build a recognizable,
+                        community-driven brand that grows through
+                        transparency, creativity and long-term vision.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+        EPILOGUE • FOOTER
+===================================-->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <img src="assets/logo.png"
+                     alt="CrocoFi Logo">
+
+                <h3>CROCOFI</h3>
+
+                <p>
+
+                    More than a token.
+                    A community.
+                    A brand.
+                    A kingdom built for the future.
+
+                </p>
+
+            </div>
+
+            <!-- Navigation -->
+
+            <div class="footer-links">
+
+                <h4>Navigate</h4>
+
+                <a href="#home">Home</a>
+                <a href="#about">Our Story</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#community">Community</a>
+
+            </div>
+
+            <!-- Official -->
+
+            <div class="footer-links">
+
+                <h4>Official</h4>
+
+                <a href="https://join.pump.fun/HSag/ksl90quo"
+                   target="_blank">
+
+                    Pump.fun
+
+                </a>
+
+                <a href="https://t.me/CrocoFi"
+                   target="_blank">
+
+                    Telegram
+
+                </a>
+
+                <a href="https://x.com/crocofisol?s=21&t=EG3Qz4GTSKqqtQHz8vpHpg"
+                   target="_blank">
+
+                    X
+
+                </a>
+
+            </div>
+
+            <!-- Contract -->
+
+            <div class="footer-links">
+
+                <h4>Official Contract</h4>
+
+                <p>
+
+                    E7SCSHhrZ2CaenM7Ewkb4MSLZbrX1dDFNcQeZn5Epump
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-quote">
+
+            <i class="fa-solid fa-crown"></i>
+
+            <h3>
+
+                The Kingdom Awaits.
+
+            </h3>
+
+            <p>
+
+                Rule The Swamp.
+                Rule The Future.
+
+            </p>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                ©️ <span id="year"></span>
+                CrocoFi.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
 </footer>
 
-<script src="assets/script.js"></script>
+<!-- Scroll To Top -->
+
+<button id="scrollTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+</main>
+
+<script src="script.js"></script>
 
 </body>
 
