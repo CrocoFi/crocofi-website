@@ -426,73 +426,9 @@ window.addEventListener("load", () => {
     }, 4000);
 
 });
-/*==================================
-        COUNTER ANIMATION
-===================================*/
 
-const counters = document.querySelectorAll(".counter");
 
-const counterObserver = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
-
-        if (!entry.isIntersecting) return;
-
-        const counter = entry.target;
-
-        const target = +counter.dataset.target;
-
-        let count = 0;
-
-        const increment = target / 120;
-
-        const update = () => {
-
-            count += increment;
-
-            if (count < target) {
-
-                counter.innerText = Math.floor(count).toLocaleString();
-
-                requestAnimationFrame(update);
-
-            } else {
-
-                counter.innerText = target.toLocaleString();
-
-            }
-
-        };
-
-        update();
-
-        counterObserver.unobserve(counter);
-
-    });
-
-});
-
-counters.forEach(counter => {
-
-    counterObserver.observe(counter);
-
-});
-/*==================================
-        MOBILE MENU
-===================================*/
-
-const menuBtn = document.getElementById("menuBtn");
-const navbar = document.getElementById("navbar");
-
-if(menuBtn && navbar){
-
-    menuBtn.addEventListener("click",()=>{
-
-        navbar.classList.toggle("active");
-
-    });
-
-}
+ 
 const mobileLinks = document.querySelectorAll("#navbar a");
 
 mobileLinks.forEach(link=>{
@@ -502,5 +438,32 @@ mobileLinks.forEach(link=>{
         navbar.classList.remove("active");
 
     });
+
+});
+/*==================================
+        ROADMAP ANIMATION
+===================================*/
+
+const roadmapItems = document.querySelectorAll(".roadmap-item");
+
+const roadmapObserver = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+},{
+    threshold:0.2
+});
+
+roadmapItems.forEach(item=>{
+
+    roadmapObserver.observe(item);
 
 });

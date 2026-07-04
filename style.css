@@ -419,8 +419,30 @@ transition:var(--transition);
 
 cursor:pointer;
 
+position: relative;
+
+overflow: hidden;
+}
+.btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:60%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+    transform:skewX(-25deg);
+    transition:left .7s ease;
 }
 
+.btn:hover::before{
+    left:160%;
+}
 .btn-primary{
 
 background:
@@ -683,9 +705,30 @@ font-weight:700;
 color:#07110b;
 
 transition:.35s;
+position:relative;
+overflow:hidden;
 
 }
+.launch-btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:60%;
+    height:100%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.4),
+        transparent
+    );
+    transform:skewX(-25deg);
+    transition:left .7s ease;
+}
 
+.launch-btn:hover::before{
+    left:160%;
+}
 .launch-btn:hover{
 
 transform:translateY(-4px);
@@ -762,6 +805,8 @@ color:var(--gold);
 
 font-weight:600;
 
+animation:badgeFloat 4s ease-in-out infinite;
+
 }
 
 .hero-left h1{
@@ -773,6 +818,8 @@ line-height:1.05;
 margin-bottom:28px;
 
 font-weight:700;
+text-shadow:
+0 0 25px rgba(25,255,122,.15);
 
 }
 
@@ -905,7 +952,9 @@ max-width:470px;
 
 z-index:5;
 
-filter:drop-shadow(0 35px 70px rgba(25,255,122,.22));
+filter:
+drop-shadow(0 25px 60px rgba(25,255,122,.30))
+drop-shadow(0 0 30px rgba(25,255,122,.18));;
 
 animation:floatMascot 5s ease-in-out infinite;
 will-change: transform;
@@ -3582,6 +3631,94 @@ padding:0 35px 30px;
         text-align:center;
 
         font-size:18px;
+
+    }
+
+}
+/*==================================
+        ROADMAP SCROLL ANIMATION
+===================================*/
+
+.roadmap-item{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:
+    opacity .8s ease,
+    transform .8s ease;
+
+}
+
+.roadmap-item.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+/*==================================
+        HERO GLOW
+===================================*/
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-200px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:900px;
+    height:900px;
+
+    background:
+    radial-gradient(circle,
+    rgba(25,255,122,.10),
+    transparent 70%);
+
+    filter:blur(80px);
+
+    z-index:-1;
+
+    animation:heroGlow 6s ease-in-out infinite;
+
+}
+
+@keyframes heroGlow{
+
+    0%,100%{
+
+        transform:
+        translateX(-50%)
+        scale(1);
+
+    }
+
+    50%{
+
+        transform:
+        translateX(-50%)
+        scale(1.15);
+
+    }
+
+}
+@keyframes badgeFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
 
     }
 
