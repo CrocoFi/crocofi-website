@@ -3291,54 +3291,7 @@ padding:0 35px 30px;
     transform:translateY(-5px);
 
 }
-/*==================================
-        MOBILE MENU
-===================================*/
 
-@media(max-width:768px){
-
-    .navbar{
-
-        position:absolute;
-
-        top:90px;
-        left:0;
-
-        width:100%;
-
-        background:#08110d;
-
-        flex-direction:column;
-
-        gap:25px;
-
-        padding:35px;
-
-        display:flex;
-
-        opacity:0;
-
-        visibility:hidden;
-
-        transform:translateY(-20px);
-
-        transition:.35s;
-
-        border-top:1px solid rgba(255,255,255,.08);
-
-    }
-
-    .navbar.show{
-
-        opacity:1;
-
-        visibility:visible;
-
-        transform:translateY(0);
-
-    }
-
-}
 /*==================================
         KINGDOM STATS
 ===================================*/
