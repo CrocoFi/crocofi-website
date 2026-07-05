@@ -2575,7 +2575,7 @@ padding:18px 0;
 
 .navbar{
 
-display:none;
+display:flex;
 
 }
 
@@ -3546,47 +3546,45 @@ padding:0 35px 30px;
 
     .navbar{
 
+        display:flex;
+
         position:fixed;
 
         top:80px;
         left:-100%;
 
         width:100%;
+        height:calc(100vh - 80px);
 
         background:#08110d;
 
         flex-direction:column;
 
+        align-items:center;
+
         gap:0;
 
         padding:25px 0;
 
-        transition:.35s ease;
-
-        border-top:1px solid rgba(255,255,255,.08);
+        transition:left .35s ease;
 
         z-index:999;
-
     }
 
     .navbar.active{
-
         left:0;
+    }
 
+    .menu-btn{
+        display:block;
     }
 
     .navbar a{
-
         width:100%;
-
         padding:18px;
-
         text-align:center;
-
         font-size:18px;
-
     }
-
 }
 /*==================================
         ROADMAP SCROLL ANIMATION
